@@ -1,0 +1,34 @@
+spring:
+  # ========== PRODUCAO: sem SQL logging ==========
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+
+  # ========== PRODUCAO: datasource via env ==========
+  datasource:
+    url: ${DB_URL}
+
+  # ========== PRODUCAO: RabbitMQ via env ==========
+  rabbitmq:
+    host: ${RABBITMQ_HOST}
+    username: ${RABBITMQ_USERNAME}
+    password: ${RABBITMQ_PASSWORD}
+
+  # ========== PRODUCAO: SMTP via env ==========
+  mail:
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+
+# ========== LOGGING SEGURO ==========
+logging:
+  level:
+    com.basilios.emailapi: WARN
+    org.springframework.amqp: WARN
+
+# ========== ACTUATOR RESTRITO ==========
+management:
+  endpoint:
+    health:
+      show-details: when-authorized

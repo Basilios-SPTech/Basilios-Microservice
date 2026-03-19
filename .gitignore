@@ -1,5 +1,15 @@
+# IDE
+.idea/
+*.iml
+
+# Maven build output
+**/target/
+
 # Compiled class file
 *.class
+
+# Environment / secrets
+.env
 
 # Log file
 *.log
