@@ -73,21 +73,6 @@ docker compose up -d rabbitmq email-api
 GET http://localhost:8081/actuator/health
 ```
 
-## Variáveis de Ambiente
-
-| Variável | Descrição | Default |
-|----------|-----------|---------|
-| `DB_URL` | JDBC URL do MySQL | `jdbc:mysql://localhost:3306/basilios_email` |
-| `DB_USERNAME` | Usuário do banco | `dev` |
-| `DB_PASSWORD` | Senha do banco | `dev123` |
-| `RABBITMQ_HOST` | Host do RabbitMQ | `localhost` |
-| `RABBITMQ_PORT` | Porta do RabbitMQ | `5672` |
-| `RABBITMQ_USERNAME` | Usuário do RabbitMQ | `guest` |
-| `RABBITMQ_PASSWORD` | Senha do RabbitMQ | `guest` |
-| `MAIL_HOST` | Host SMTP | `smtp.gmail.com` |
-| `MAIL_PORT` | Porta SMTP | `587` |
-| `MAIL_USERNAME` | Usuário SMTP | — |
-| `MAIL_PASSWORD` | Senha SMTP | — |
 ## Licença
 
 MIT — veja [LICENSE](LICENSE).
