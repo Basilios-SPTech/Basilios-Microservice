@@ -91,3 +91,7 @@ GET http://localhost:8081/actuator/health
 ## Licença
 
 MIT — veja [LICENSE](LICENSE).
+
+---
+
+Mantido sob a organização [Basilios-SPTech](https://github.com/Basilios-SPTech).
