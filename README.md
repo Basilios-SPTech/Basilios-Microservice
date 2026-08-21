@@ -1,6 +1,8 @@
-# Basilios - Email API (Microserviço de Notificações)
+# Basilios Email API
 
-Microserviço responsável pelo envio de emails de notificação do sistema Basilios.
+Microsserviço de notificações por e-mail do **Basilios** (status de pedido e reset de senha), consumindo eventos via RabbitMQ com idempotência e registro de falhas.
+
+Repositórios relacionados: [basilios-api](https://github.com/Basilios-SPTech/basilios-api) · [basilios-infra](https://github.com/Basilios-SPTech/basilios-infra)
 
 ## Arquitetura
 
@@ -61,7 +63,7 @@ email-api/
 cd email-api
 ./mvnw spring-boot:run
 
-# Via Docker Compose (no projeto Basilios-Containers)
+# Via Docker Compose (no projeto basilios-infra)
 docker compose up -d rabbitmq email-api
 ```
 
@@ -86,3 +88,6 @@ GET http://localhost:8081/actuator/health
 | `MAIL_PORT` | Porta SMTP | `587` |
 | `MAIL_USERNAME` | Usuário SMTP | — |
 | `MAIL_PASSWORD` | Senha SMTP | — |
+## Licença
+
+MIT — veja [LICENSE](LICENSE).
